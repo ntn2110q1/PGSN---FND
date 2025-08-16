@@ -22,7 +22,7 @@ Bạn có thể thu thập dữ liệu thô và tham khảo quá trình xử lý
 
 <p align="center">
     <br>
-    <a href="https://github.com/safe-graph/GNN-FakeNews">
+    <a href="[https://github.com/safe](https://github.com/ntn2110q1/GPSN)">
         <img src="https://github.com/safe-graph/GNN-FakeNews/blob/main/overview.png" width="1000"/>
     </a>
     <br>
