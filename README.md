@@ -3,6 +3,14 @@ Deploy PGSN - DFN: "Detecting Fake News Based on Propagation Graph Structure and
 
 # Overview
 Combine user profiles/preferences, news propagation context, and sequential chain of time-based interactions to detect fake news. User features are encoded (BERT, Spacy) as nodes in a news propagation graph and sequential chain. Then, use GNN layers (GCN, GAT, GraphSage, GTN) to process the news propagation graph and Transformer/LSTM to process the sequential information layer . These vectors are aggregated and trained to create a fake news detector.
+## Baselines Evaluation
+Performance Table of My Model and Baseline Models. This shows that my model has a slight improvement in Accuracy (Acc) and F1-Score (F1):
+| Model         | POL (ACC) | POL (F1) | GOS (ACC) | GOS (F1) |
+|---------------|-----------|----------|-----------|----------|
+| GNN-CL    | 62.90     | 62.25    | 95.11     | 95.09    |
+| GCNFN    | 83.16     | 83.56    | 96.38     | 96.36    |
+| UPFD   | 84.62   | 84.65   | 97.23   | 97.22 |
+| PGSN   | **85.52**    | **85.45**   | **97.62**   | **97.63** |
 
 ## Datasets
 My model was trained and evaluated on the 'UPFD_Politifact' and 'UPFD_Gossipcop' datasets. For detailed information about these two datasets, please refer to the following two papers:
@@ -85,11 +93,3 @@ To train and evaluate BiGCN; GCNFN or GNN-CL; run the 'bigcn.py'; 'gcnfn.py' or 
 ```python
 python [bigcn; gcnfn; gnncl].py --dataset [politifact; gossipcop] --feature [bert; spacy; profile; content] --lr 0.001 --epochs 
 ```
-### Baselines Evaluation
-Performance Table of My Model and Baseline Models. This shows that my model has a slight improvement in Accuracy (Acc) and F1-Score (F1):
-| Model         | POL (ACC) | POL (F1) | GOS (ACC) | GOS (F1) |
-|---------------|-----------|----------|-----------|----------|
-| GNN-CL    | 62.90     | 62.25    | 95.11     | 95.09    |
-| GCNFN    | 83.16     | 83.56    | 96.38     | 96.36    |
-| UPFD   | 84.62   | 84.65   | 97.23   | 97.22 |
-| PGSN   | **85.52**    | **85.45**   | **97.62**   | **97.63** |
