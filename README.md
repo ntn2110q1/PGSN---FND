@@ -4,7 +4,7 @@ Deploy GPSN - DFN: "Detecting Fake News Based on Graph Propagation Structure and
 # Overview
 Combine user profiles/preferences, news propagation context, and sequential chain of time-based interactions to detect fake news. User features are encoded (BERT, Spacy) as nodes in a news propagation graph and sequential chain. Then, use GNN layers (GCN, GAT, GraphSage, GTN) to process the news propagation graph and Transformer/LSTM to process the sequential information layer . These vectors are aggregated and trained to create a fake news detector.
 
-# Datasets
+## Datasets
 Mô hình của tôi huấn luyện và đánh giá trên tập dữ liệu 'UPFD_Politifact' và 'UPFD_Gossipcop'. Thông tin chi tiết về 2 tập dữ liệu xin mời tham khảo 2 bài báo:
 
 [Fakenewsnet: A data repository with news content, social context, and spatiotemporal information for studying fake news on social media](https://arxiv.org/pdf/1809.01286)
@@ -27,4 +27,34 @@ Bạn có thể thu thập dữ liệu thô và tham khảo quá trình xử lý
     </a>
     <br>
 <p>
+To run the model, you should get data and construct the following formation.
+<pre> <code> 
+GPSN-DFN/
+├── mappingdata/
+│   ├── gos_id_time_mapping.pkl
+│   ├── gos_id_twitter_mapping.pkl
+│   ├── gos_news_list.txt
+│   ├── pol_id_time_mapping.pkl
+│   ├── pol_id_twitter_mapping.pkl
+│   └── pol_news_list.txt
+├── data/   
+│   └── gossipcop/raw/
+│   │   ├── A.txt
+│   │   ├── graph_labels.npy
+│   │   ├── new_bert_feature.npz
+│   │   ├── new_content_feature.npz
+│   │   ├── new_profile_feature.npz
+│   │   ├── new_spacy_feature.npz
+│   │   └── node_graph_id.npy
+│   └── politifact/raw/
+│   │   ├── A.txt
+│   │   ├── graph_labels.npy
+│   │   ├── new_bert_feature.npz
+│   │   ├── new_content_feature.npz
+│   │   ├── new_profile_feature.npz
+│   │   ├── new_spacy_feature.npz
+└   └   └── node_graph_id.npy 
+...
+</code> </pre>
 
+## Models
