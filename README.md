@@ -66,3 +66,5 @@ Dưới đây là khung hoạt động của mô hình của tôi:
     </a>
     <br>
 <p>
+
+All GNN-based fake news detection models are under the `\gnn_model` directory, được lấy từ [GNN-FakeNews](https://github.com/safe-graph/GNN-FakeNews/tree/main/gnn_model)
