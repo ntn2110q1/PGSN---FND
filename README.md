@@ -77,9 +77,9 @@ All GNN-based fake news detection models are under the `\gnn_model` directory, s
 * **[UPFD](https://dl.acm.org/doi/pdf/10.1145/3404835.3462990)**: Dou, Yingtong and Shu, Kai and Xia, Congying and Yu, Philip S. and Sun, Lichao. "User Preference-aware Fake News Detection." Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval.
 
 ### Train and Evaluation
-To train and evaluate GPSN or UPFD, run the 'gpsn.py' or 'upfd.py' scripts; with lr = 0.01 corresponding to the GraphSage model on the Politifact dataset, and lr = 0.001 for all other cases.
+To train and evaluate PGSN or UPFD, run the 'pgsn.py' or 'upfd.py' scripts; with lr = 0.01 corresponding to the GraphSage model on the Politifact dataset, and lr = 0.001 for all other cases.
 ```python
-python [gpsn; upfd].py --model[gcn; gat; sage; gtn] --dataset [politifact; gossipcop] --feature [bert; spacy; profile; content] --lr [0.01; 0.001] --epochs
+python [pgsn; upfd].py --model[gcn; gat; sage; gtn] --dataset [politifact; gossipcop] --feature [bert; spacy; profile; content] --lr [0.01; 0.001] --epochs
 ```
 To train and evaluate BiGCN; GCNFN or GNN-CL; run the 'bigcn.py'; 'gcnfn.py' or 'gnncl.py'
 ```python
