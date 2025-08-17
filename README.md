@@ -22,8 +22,8 @@ You can collect the raw data and refer to the data processing procedure at: [GNN
 
 <p align="center">
     <br>
-    <a href="[https://github.com/safe](https://github.com/ntn2110q1/PGSN)">
-        <img src="https://github.com/ntn2110q1/PGSN/blob/main/picture/DataProcessing.png" width="1000"/>
+    <a href="[https://github.com/safe](https://github.com/ntn2110q1/PGSN---FND)">
+        <img src="https://github.com/ntn2110q1/PGSN---FND/blob/main/picture/DataProcessing.png" width="1000"/>
     </a>
     <br>
 <p>
@@ -63,8 +63,8 @@ To run the code in this repo, you need to have `Python>=3.6`, `PyTorch>=1.6`, an
 Here is the operational framework of my model:
 <p align="center">
     <br>
-    <a href="[https://github.com/safe](https://github.com/ntn2110q1/PGSN)">
-        <img src="https://github.com/ntn2110q1/PGSN/blob/main/picture/FrameWork.png" width="1000"/>
+    <a href="[https://github.com/safe](https://github.com/ntn2110q1/PGSN---FND)">
+        <img src="https://github.com/ntn2110q1/PGSN---FND/blob/main/picture/FrameWork.png" width="1000"/>
     </a>
     <br>
 <p>
