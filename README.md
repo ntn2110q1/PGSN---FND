@@ -59,3 +59,10 @@ GPSN-DFN/
 
 ## Models
 Dưới đây là khung hoạt động của mô hình của tôi:
+<p align="center">
+    <br>
+    <a href="[https://github.com/safe](https://github.com/ntn2110q1/GPSN)">
+        <img src="https://github.com/ntn2110q1/GPSN/blob/main/picture/FrameWork.png" width="1000"/>
+    </a>
+    <br>
+<p>
