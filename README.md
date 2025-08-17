@@ -67,4 +67,12 @@ Dưới đây là khung hoạt động của mô hình của tôi:
     <br>
 <p>
 
-All GNN-based fake news detection models are under the `\gnn_model` directory, được lấy từ [GNN-FakeNews](https://github.com/safe-graph/GNN-FakeNews/tree/main/gnn_model)
+All GNN-based fake news detection models are under the `\gnn_model` directory, được lấy từ [GNN-FakeNews](https://github.com/safe-graph/GNN-FakeNews/tree/main/gnn_model) :
+
+* **[GNN-CL](https://arxiv.org/pdf/2007.03316.pdf)**: Han, Yi, Shanika Karunasekera, and Christopher Leckie. "Graph neural networks with continual learning for fake news detection from social media." arXiv preprint arXiv:2007.03316 (2020).
+* **[GCNFN](https://arxiv.org/pdf/1902.06673.pdf)**: Monti, Federico, Fabrizio Frasca, Davide Eynard, Damon Mannion, and Michael M. Bronstein. "Fake news detection on social media using geometric deep learning." arXiv preprint arXiv:1902.06673 (2019).
+* **[BiGCN](https://arxiv.org/pdf/2001.06362.pdf)**: Bian, Tian, Xi Xiao, Tingyang Xu, Peilin Zhao, Wenbing Huang, Yu Rong, and Junzhou Huang. "Rumor detection on social media with bi-directional graph convolutional networks." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 34, no. 01, pp. 549-556. 2020.
+* **[UPFD](https://dl.acm.org/doi/pdf/10.1145/3404835.3462990)**: Dou, Yingtong and Shu, Kai and Xia, Congying and Yu, Philip S. and Sun, Lichao. "User Preference-aware Fake News Detection." Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval.
+
+  ### Train and Evaluation
+To train and evaluate PGSN
