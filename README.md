@@ -83,7 +83,7 @@ python [pgsn; upfd].py --model[gcn; gat; sage; gtn] --dataset [politifact; gossi
 ```
 To train and evaluate BiGCN; GCNFN or GNN-CL; run the 'bigcn.py'; 'gcnfn.py' or 'gnncl.py'
 ```python
-python [bigcn; gcnfn; gnncl].py --dataset [politifact; gossipcop] --feature [bert; spacy; profile; content] --lr0.001 --epochs 
+python [bigcn; gcnfn; gnncl].py --dataset [politifact; gossipcop] --feature [bert; spacy; profile; content] --lr 0.001 --epochs 
 ```
 ### Baselines Evaluation
 Performance Table of My Model and Baseline Models. This shows that my model has a slight improvement in Accuracy (Acc) and F1-Score (F1):
