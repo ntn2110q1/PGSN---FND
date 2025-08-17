@@ -232,7 +232,7 @@ class FNNDataset(InMemoryDataset):
 		return '{}({})'.format(self.name, len(self))
 
 def make_temporal_weight(data, name):
-	with open(f'C:/20241/DATN/DATN/mappingdata/{name[:3]}_id_time_mapping.pkl', 'rb') as f:
+	with open(f'your path/{name[:3]}_id_time_mapping.pkl', 'rb') as f:
 		time = pickle.load(f)
 	time_dict = {}
 	idx = 0
@@ -242,4 +242,5 @@ def make_temporal_weight(data, name):
 		for g_i, each_idx in enumerate(range(idx + 1, idx + leng), 1):
 			time_dict[b_i][g_i] = datetime.datetime.fromtimestamp(time[each_idx])
 		idx += leng
+
 	return time_dict
