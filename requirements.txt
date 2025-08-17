@@ -1,0 +1,11 @@
+keras>=2.2.4
+scikit-learn>=0.22.1
+tqdm>=4.31.1
+numpy>=1.19.4
+scipy>=1.5.2
+torch-geometric 2.6.1
+pyg_lib 
+torch_scatter 
+torch_sparse 
+torch_cluster 
+torch_spline_conv
