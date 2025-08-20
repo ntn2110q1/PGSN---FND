@@ -1,5 +1,3 @@
-# python SUPFD.py --model sage --feature bert --seed 777 --epochs 35 --dataset politifact --lr 0.01 --device cpu --seq_layer_type lstm
-# seed 501 258
 import argparse
 import random
 import time
@@ -248,8 +246,10 @@ if __name__ == '__main__':
 	best_epoch = 0
 
 	t = time.time()
-	model.train()
+	
 	for epoch in tqdm(range(args.epochs)):
+		model.train()
+		
 		loss_train = 0.0
 		out_log = []
 		for i, data in enumerate(train_loader):
@@ -276,3 +276,4 @@ if __name__ == '__main__':
 	[acc, f1_macro, f1_micro, precision, recall, auc, ap], test_loss = compute_test(test_loader, verbose=False)
 	print(f'Test set results: acc: {acc:.4f}, f1_macro: {f1_macro:.4f}, f1_micro: {f1_micro:.4f}, '
 		  f'precision: {precision:.4f}, recall: {recall:.4f}, auc: {auc:.4f}, ap: {ap:.4f}')
+
