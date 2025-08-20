@@ -233,14 +233,20 @@ class FNNDataset(InMemoryDataset):
 
 def make_temporal_weight(data, name):
 	with open(f'your path/{name[:3]}_id_time_mapping.pkl', 'rb') as f:
-		time = pickle.load(f)
+		time_mapping = pickle.load(f)
 	time_dict = {}
 	idx = 0
 	for b_i, each_batch in enumerate(data):
-		time_dict[b_i] = {0: 0}
+		# Khởi tạo với node gốc (news node) có timestamp = 0
+		time_dict[b_i] = {0: datetime.datetime.fromtimestamp(0)}
 		leng = each_batch['x'].shape[0]
-		for g_i, each_idx in enumerate(range(idx + 1, idx + leng), 1):
-			time_dict[b_i][g_i] = datetime.datetime.fromtimestamp(time[each_idx])
-		idx += leng
 
+		# Gán timestamp cho các node user interactions (bắt đầu từ index 1)
+		for g_i in range(1, leng):
+			each_idx = idx + g_i
+			timestamp = time_mapping.get(each_idx, 0)
+			time_dict[b_i][g_i] = datetime.datetime.fromtimestamp(timestamp)
+
+		idx += leng
 	return time_dict
+
