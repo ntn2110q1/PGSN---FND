@@ -13,7 +13,7 @@ Performance Table of My Model and Baseline Models. This shows that my model has 
 | PGSN   | **85.52**    | **85.45**   | **97.62**   | **97.63** |
 
 ## Datasets
-My model was trained and evaluated on the 'UPFD_Politifact' and 'UPFD_Gossipcop' datasets. For detailed information about these two datasets, please refer to the following two papers:
+My model was trained and evaluated on the `UPFD_Politifact` and `UPFD_Gossipcop` datasets. For detailed information about these two datasets, please refer to the following two papers:
 
 [Fakenewsnet: A data repository with news content, social context, and spatiotemporal information for studying fake news on social media](https://arxiv.org/pdf/1809.01286)
 
